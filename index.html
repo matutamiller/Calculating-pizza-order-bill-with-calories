@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pizza Order calculating Price</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+</head>
+<body>
+	<section class="content-wr">
+		<h1>Pizza menu</h1>
+		<p><input onchange="getResult()" type="checkbox" checked disabled data-cost="10" data-cal="150" class="menu"> Pizza Base</p>
+		<p><input onchange="getResult()" type="checkbox" checked disabled data-cost="10" data-cal="125" class="menu">Cheese</p>
+		<hr>
+		<h2>Fillings</h2>
+		<p><input onchange="getResult()" type="checkbox" checked data-cost="20" data-cal="200" class="menu">Pepperoni</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="15" data-cal="130" class="menu">Salami</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="12" data-cal="150" class="menu">Bacon</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="17" data-cal="120" class="menu">Ham</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="10" data-cal="97" class="menu">Chicken</p>
+		<hr>
+		<h2>Sauces</h2>
+		<p><input onchange="getResult()" type="checkbox" checked data-cost="5" data-cal="20" class="menu">Tomatoe sauce</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="7" data-cal="37" class="menu">Pesto</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="7" data-cal="40" class="menu">BBQ Sauce</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="8" data-cal="35" class="menu">Tapenade</p>
+		<p><input onchange="getResult()" type="checkbox" data-cost="10" data-cal="150" class="menu">Double Cheese</p>
+		<hr>
+		<h3>Total:</h3>
+		<p>Calories: <span id="cal"></span> Price: <span id="cost"></span></p>
+		<button id="result">Bill</button>
+ 	</section>
+<script src="script.js"></script>
+</body>
+</html>
